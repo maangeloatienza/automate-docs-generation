@@ -36,7 +36,21 @@ module.exports = [
     "https://docs.rakwireless.com/product-categories/wisblock/rak12027/datasheet/",
     "https://docs.rakwireless.com/product-categories/wisblock/rak12052/datasheet/",
     "https://docs.rakwireless.com/product-categories/wisblock/rak12022/datasheet/",
-    "https://docs.rakwireless.com/product-categories/wisblock/rak12039/datasheet/"
+    "https://docs.rakwireless.com/product-categories/wisblock/rak12039/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak13002/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak14000/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak13800/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak19001/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak4631/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak1921/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak19011/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak19012/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak19017/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak19016/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak19003/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak19009/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak19010/datasheet/",
+    "https://docs.rakwireless.com/product-categories/wisblock/rak11200/datasheet/"
 
 ]
 
