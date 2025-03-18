@@ -23,6 +23,7 @@ const printPdf = async () => {
         title = (title).replaceAll("| RAKwireless Documentation Center","")
         title = title.trim()
         title = title.replaceAll(" ","_")
+        title = title.replaceAll("/","_")
         console.log("Title: ",title)
         await page.pdf({
             path: `./pdf/${title}.pdf`,
