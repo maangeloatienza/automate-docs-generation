@@ -4,7 +4,7 @@ module.exports = [
 "https://docs.rakwireless.com/product-categories/wisduo/rak4630-module/datasheet/",
 "https://docs.rakwireless.com/product-categories/wislink/rak2287/datasheet/",
 "https://docs.rakwireless.com/product-categories/wislink/rak5146/datasheet/",
-"https://docs.rakwireless.com/product-categories/wisblock/rak4631-r/overview/",
+"https://docs.rakwireless.com/product-categories/wisblock/rak4631-r/datasheet/",
 "https://docs.rakwireless.com/product-categories/wisblock/rak19007/datasheet/",
 "https://docs.rakwireless.com/product-categories/wisblock/rak1901/datasheet/",
 "https://docs.rakwireless.com/product-categories/wisblock/rak1902/datasheet/",

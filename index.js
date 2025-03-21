@@ -3,7 +3,18 @@ const urls = require('./pages')
 const headerTemplate = require('./templates/header')
 const footerTemplate = require('./templates/footer')
 const excludedSections = `.content-container {background-color:transparent;} #pdf-text-banner { display: none;} #pdf-edit-content{ display: none;} #pdf-footer{ display: none;} #pdf-paginator{ display: none;} #download-pdf-btn{ display:none;} #pdf-popup-banner{ display: none;} #body-wo-popup{ opacity: 100;} .breadcrumbs{ display: none;} #download-modal{ display:none;}  table { width: fit-content; table-layout: fixed;  border-collapse: collapse; } td { word-wrap: break-word; } th { word-wrap: break-word; }`
-
+const duplicates = []
+function findDuplicates(arr) {
+    const seen = new Set();
+    const duplicates = arr.filter(item => {
+      if (seen.has(item)) {
+        return true;
+      }
+      seen.add(item);
+      return false;
+    });
+    return duplicates;
+}
 const printPdf = async () => {
     const browser = await puppeteer.launch({
         headless: true,
@@ -25,7 +36,7 @@ const printPdf = async () => {
         title = title.replaceAll(" ","_")
         title = title.replaceAll("/","_")
         console.log("Title: ",title)
-        await page.pdf({
+        const pdf = await page.pdf({
             path: `./pdf/${title}.pdf`,
             format: 'A4',
             displayHeaderFooter: true,
@@ -41,9 +52,13 @@ const printPdf = async () => {
             scale: 1,
             title
         });
-
     }
     await browser.close();
+    console.log("DONE")
+    console.log("****************************************************")
+    console.log("DUPLICATES")
+    console.table(findDuplicates(urls))
+    console.log("****************************************************")
 }
 
 
